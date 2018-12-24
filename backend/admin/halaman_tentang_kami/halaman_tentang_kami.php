@@ -3,11 +3,11 @@
   <form action="/action_page.php">
     <div class="form-group">
       <label>Judul:</label>
-      <input type="text" class="form-control" name="email">
+      <input type="text" class="form-control" name="judul">
     </div>
     <div class="form-group">
   <label for="comment">Isi:</label>
-  <textarea class="form-control" rows="5" id="comment"></textarea>
+  <textarea class="form-control" rows="5" id="comment" name="isi"></textarea>
 </div>    
     <button type="submit" class="btn btn-primary">Submit</button>
   </form>
