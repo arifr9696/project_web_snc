@@ -50,12 +50,9 @@
   </header>
 
   <!--Mengatur Link Halaman -->
-  <?php
-  @$menu = $_GET["menu"];
-
-  //untuk halaman menu
+  <?php//untuk halaman menu
   if($menu == "halaman_menu"){
-  	include "halaman_menu/halaman_menu.php";
+    include "halaman_menu/halaman_menu.php";
   }
   else if($menu == "tambah_menu"){
     include "halaman_menu/tambah_menu.php";
@@ -76,12 +73,19 @@
   else if($menu == "halaman_tentang_kami"){
     include "halaman_tentang_kami/halaman_tentang_kami.php";
   }
+  @$menu = $_GET["menu"];
+
+  
+
+  //halaman peraturan
   else if($menu == "halaman_peraturan_organisasi"){
     include "halaman_peraturan/halaman_peraturan.php";
   }
  else if($menu == "tambah_peraturan"){
     include "halaman_peraturan/tambah_peraturan.php";
   }
+
+  //halaman_ beranda
   else if($menu == "beranda"){
   	include "halaman_beranda/beranda.php";
   }  
